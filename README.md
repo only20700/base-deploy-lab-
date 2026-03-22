@@ -57,3 +57,4 @@ main().catch((error) => {
   process.exitCode = 1;
 });
 npx hardhat run scripts/deploy.js --network baseSepolia
+npx hardhat run scripts/deploy.js --network base
