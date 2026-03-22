@@ -43,3 +43,16 @@ contract Counter {
         count += 1;
     }
 }
+async function main() {
+  const Storage = await ethers.getContractFactory("SimpleStorage");
+  const storage = await Storage.deploy();
+
+  await storage.waitForDeployment();
+
+  console.log("SimpleStorage deployed:", await storage.getAddress());
+}
+
+main().catch((error) => {
+  console.error(error);
+  process.exitCode = 1;
+});
