@@ -22,3 +22,4 @@ module.exports = {
     }
   }
 };
+PRIVATE_KEY=your_private_key_here
