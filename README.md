@@ -23,3 +23,13 @@ module.exports = {
   }
 };
 PRIVATE_KEY=your_private_key_here
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
+
+contract SimpleStorage {
+    uint256 public value;
+
+    function set(uint256 _value) public {
+        value = _value;
+    }
+}
